@@ -1,73 +1,211 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Orar USARB</title>
-<link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orar USARB</title>
+    <link rel="shortcut icon" href="src/logo 2.png" type="image/x-icon">
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-     <div class="wrapper">
-    <section id="left-section">
+    <div class="wrapper">
+        <section id="left-section">
             <div class="left-container">
-            <div class="reading">Orarul Cursurilor</div>
-                <div class="button-container">
+                <div class="heading">Orarul cursurilor</div>
+                <div class="buttons-container">
                     <button class="grupe_button">Grupe</button>
                     <button class="profesori_button">Profesori</button>
                     <button class="aule_button">Aule</button>
                 </div>
-                <div class="switch-container"
-                <p>Regim pentru student</p>
-                <div class="switch">
-                    <div class="switcher"></div>
+                <div class="switch-container">
+                    <p>Regim pentru student</p>
+                    <div class="switch">
+                        <div class="switcher"></div>
+                    </div>
                 </div>
+                <input type="search" name="" id="search-input" placeholder="Search">
+                <select name="" id="day-selector">
+                    <option value="1">Ziua</option>
+                    <option value="2">Luni</option>
+                    <option value="3">Marți</option>
+                    <option value="4">Miercuri</option>
+                    <option value="5">Joi</option>
+                    <option value="6">Vineri</option>
+                    <option value="7">Sâmbătă</option>
+                    <option value="8">Duminică</option>
+                </select>
+
+                <select name="" id="week-selector">
+                    <option value="-1">Săptămîna</option>
+                    <option value="1" class="initial">1 (2.9.2024 - 8.9.2024)</option>
+                    <option value="2" class="initial">2 (9.9.2024 - 15.9.2024)</option>
+                    <option value="3" class="initial">3 (16.9.2024 - 22.9.2024)</option>
+                    <option value="4" class="initial">4 (23.9.2024 - 29.9.2024)</option>
+                    <option value="5" class="initial">5 (30.9.2024 - 6.10.2024)</option>
+                    <option value="6" class="initial">6 (7.10.2024 - 13.10.2024)</option>
+                    <option value="7" class="initial">7 (14.10.2024 - 20.10.2024)</option>
+                    <option value="8" class="initial">8 (21.10.2024 - 27.10.2024)</option>
+                    <option value="9" class="initial">9 (28.10.2024 - 3.11.2024)</option>
+                    <option selected="selected" value="10" class="initial">10 (4.11.2024 - 10.11.2024)</option>
+                    <option value="11" class="initial">11 (11.11.2024 - 17.11.2024)</option>
+                    <option value="12" class="initial">12 (18.11.2024 - 24.11.2024)</option>
+                    <option value="13" class="initial">13 (25.11.2024 - 1.12.2024)</option>
+                    <option value="14" class="initial">14 (2.12.2024 - 8.12.2024)</option>
+                    <option value="15" class="initial">15 (9.12.2024 - 15.12.2024)</option>
+                    <option value="16" class="initial">16 (16.12.2024 - 22.12.2024)</option>
+                    <option value="17" class="initial">17 (23.12.2024 - 29.12.2024)</option>
+                    <option value="18" class="initial">18 (30.12.2024 - 5.1.2025)</option>
+                    <option value="19" class="initial">19 (6.1.2025 - 12.1.2025)</option>
+                    <option value="20" class="initial">20 (13.1.2025 - 19.1.2025)</option>
+                    <option value="21" class="initial">21 (20.1.2025 - 26.1.2025)</option>
+                </select>
+
+                <table id="shedule1">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>L - 4</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>Ma - 5</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>Mi - 6</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>J - 7</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>V - 8</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>S - 9</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>D - 10</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="about">
+                    <p>P - Prelegere</p>
+                    <p>S - Seminar</p>
+                    <p>L - Laborator</p>
+                    <p>PC - Proiect de Curs</p>
+                    <p>EP - Evaluare periodică</p>
+                    <p>C - Consultație</p>
+                    <p>E - Examinare</p>
+                    <p>R - Reexaminare</p>
+                    <p>SP - Seminar prealabil</p>
+                    <p>ST - Seminar de totalizare</p>
                 </div>
-<input type="search" name="" id="search-input" placedo</input>
-<ul class="groups">
- <li>IS11Z</li>
- <li>IS11R</li>
- <li>IS21Z</li>
- <li>IS21R</li>
-</ul>
-<select name="" id="day-selector">
-    <option value="1">Ziua</option>
-    <option value="2">Luni</option>
-    <option value="3">Marți</option>
-    <option value="4">Miercuri</option>
-    <option value="5">Joi</option>
-    <option value="6">Vineri</option>
-    <option value="7">Sîmbătă</option>
-    <option value="8">Duminică</option>
-</select>
-<select name="" id=""></select>
+                <span class="descarca">Descarca orar</span>
+                <span class="examene">Examene</span>
+                <span class="planificare">Planificare</span>
+                <div class="atention">
+                    Serviciul este inactiv între ore 23:00 și 3:00
+                </div>
+            </div>
         </section>
-    </body>
-<!-- table-->
- <div class="table-grid-container">
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
-    <div class="cells"></div>
- </div>
+        <section>
+        <div id="logo">
+            <img src="src/logo_usarb.png" alt="">
+        </div>
+        <h2>UNIVERSITATEA DE STAT „ALECU RUSSO” DIN BĂLȚI</h2>
+        <table id="shedule">
+            <tbody>
+                <tr>
+                    <th><p>8:00</p><br><p>9:30</p></th>
+                    <th></th>
+                    </th>
+                </tr>
+                <tr>
+                    <th><p>9:45</p><br><p>11:15</p></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><p>11:30</p><br><p>13:00</p></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><p>13:15</p><br><p>14:45</p></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><p>15:00</p><br><p>16:30</p></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><p>16:45</p><br><p>18:15</p></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><p>18:30</p><br><p>20:00</p></th>
+                    <th></th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    </div>
+</body>
+</html>
